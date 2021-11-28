@@ -12,7 +12,7 @@ class UserController extends Controller
      */
     public function getUserName(): User
     {
-        $user = Admin::query()->findOrFail(1);
+        $user = User::query()->findOrFail(1);
         return $user->name;
     }
 
